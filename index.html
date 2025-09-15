@@ -1,18 +1,22 @@
+---
+layout: default
+title: My GitHub Blog
+---
+
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-    <meta charset="utf-8">
-    <title>My GitHub Blog</title>
+  <meta charset="utf-8" />
+  <title>{{ page.title }}</title>
 </head>
 <body>
-    <h1>Chào mừng đến blog của mình!</h1>
-    <p>Bài viết đầu tiên trên GitHub Pages 🚀</p>
-    <button id="click">Click me</button>
+  <h1>Chào mừng đến blog của mình!</h1>
+  <p>Bài viết đầu tiên trên GitHub Pages 🚀</p>
+  <button id="click">Click me</button>
+
+  <script>
+    const btn = document.getElementById("click");
+    btn.addEventListener("click", () => alert("Bấm rồi nè!"));
+  </script>
 </body>
-<script>
-    const btn = document.getElementById("click")
-    btn.addEventListener('click', () => {
-        alert("Chúc mừng bạn đã nhận được một chiếc điện thoại iphone 15 promax")
-    })
-</script>
 </html>
